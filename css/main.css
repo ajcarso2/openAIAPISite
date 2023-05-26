@@ -124,7 +124,7 @@ textarea {
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  font-family: Arial, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .giant-text-box:focus {

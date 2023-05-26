@@ -18,3 +18,4 @@ buttons.forEach((button) => {
     targetBox.classList.add('active');
   });
 });
+
