@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<div id="navbar">
+  <div>
+    <button class="nav-button" data-target="ada">Ada</button>
+    <button class="nav-button" data-target="davinci">Davinci</button>
+    <button class="nav-button" data-target="gpt-3.5">GPT-3.5</button>
+  </div>
+
+  <div class="dropdown">
+    <button class="nav-button dropbtn">Profile</button>
+    <div class="dropdown-content">
+      <a href="#">Settings</a>
+      <a href="#">Profile</a>
+      <a href="#">Log Out</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <textarea id="ada" class="giant-text-box active" readonly>Ada content...</textarea>
+  <textarea id="davinci" class="giant-text-box" readonly>Davinci content...</textarea>
+  <textarea id="gpt-3.5" class="giant-text-box" readonly>GPT-3.5 content...</textarea>
+
+  <textarea class="giant-text-box" readonly></textarea>
+  <input type="text" class="flat-text-box" placeholder="Enter chat prompt here..." />
+</div>
+
+<!-- scripts -->
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+
+</html>
