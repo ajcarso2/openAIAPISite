@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Austin Carson -- Developer
 
 # THANKS
 
-    <name>
+    Weird Al :)
 
 # TECHNOLOGY COLOPHON
 
