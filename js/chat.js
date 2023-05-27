@@ -22,7 +22,8 @@ document.getElementById('chat-input').addEventListener('keydown', function(event
         activeTextbox.innerHTML = "";
       }
 
-      var output = marked.parse("**Your Prompt Was:** " + input); // Create a variable to store the output
+      //var output = marked.parse("**Your Prompt Was:** " + input); // Create a variable to store the output
+      var output = "Your Prompt Was: " + input + "\n"; // Create a variable to store the output
 
       activeTextbox.innerHTML += output; // Add the input value to the active text box
     }
