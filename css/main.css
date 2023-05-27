@@ -103,6 +103,11 @@ textarea {
   margin-bottom: 20px;
   resize: none;
   padding: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1.5;
 }
 
 .flat-text-box {
