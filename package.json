@@ -15,6 +15,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "marked": "^5.0.3"
   }
 }
