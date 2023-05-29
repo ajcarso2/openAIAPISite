@@ -17,7 +17,8 @@ document.getElementById('chat-input').addEventListener('keydown', function(event
     var activeTextbox = document.querySelector('.giant-text-box.active'); // Find the active text box
     console.log(activeTextbox);
 
-    let ai = ""
+    let ai = "";
+    let type = "";
 
     if (activeTextbox) { // If an active text box was found...
       if(activeTextbox.textContent.trim() === "Content..."){
@@ -27,15 +28,21 @@ document.getElementById('chat-input').addEventListener('keydown', function(event
       ai = activeTextbox.id;
 
       if(ai === "ada"){
+        console.log("ada");
         ai = "text-ada-001"
+        type = "Completion";
       }else if(ai === "davinci"){
+        console.log("davinci");
         ai = "text-davinci-003"
+        type = "Completion";
       }else if(ai === "gpt-3.5"){
+        console.log("gpt-3.5");
         ai = "gpt-3.5-turbo"
+        type = "Chat";
       }
 
       let messenger = new JSONNetworkHandler("localhost", 5000);
-      messenger.sendPrompt(input, ai).then((response) => {
+      messenger.sendPrompt(input, ai, type).then((response) => {
         console.log(response);
         let output = marked.parse("Your Prompt Was: " + input + "\n" + "The AI's Response Was: " + response.data.Response);
         activeTextbox.innerHTML += output;

@@ -7,10 +7,11 @@ async function sendJsonObject(ip, port, jsonObject) {
   }
 }
 
-function createJsonObject(prompt, ai) {
+function createJsonObject(prompt, ai, type) {
   let jsonObject = {
     "Prompt": prompt,
-    "Ai": ai
+    "Ai": ai,
+    "Type": type,
   };
   return jsonObject;
 }
@@ -20,8 +21,9 @@ export class JSONNetworkHandler {
     this.ip = ip;
     this.port = port;
   }
-  async sendPrompt(prompt, ai) {
-    let jsonObject = createJsonObject(prompt, ai);
+  async sendPrompt(prompt, ai, type) {
+    let jsonObject = createJsonObject(prompt, ai, type);
+    console.log(jsonObject);
     let response = await sendJsonObject(this.ip, this.port, jsonObject);
     return response;
   }
